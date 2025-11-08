@@ -1,17 +1,30 @@
- "You are my fire
-The one desire
-Believe when I say
-I want it that way
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Bem-vindo(a)!</h1>
+    <p>Faça login para continuar</p>
 
-But we are two worlds apart
-Can't reach to your heart
-When you say
-That I want it that way
-g
-Tell me why
-Ain't nothin' but a heartache
-Tell me why
-Ain't nothin' but a mistake
-Tell me why
-I never wanna hear you say
-I want it that way"
+    <form id="loginForm">
+      <div class="input-group">
+        <input type="text" id="usuario" required>
+        <label for="usuario">Usuário</label>
+      </div>
+      <div class="input-group">
+        <input type="password" id="senha" required>
+        <label for="senha">Senha</label>
+      </div>
+      <button type="submit">Entrar</button>
+      <p class="erro" id="erroMsg"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
