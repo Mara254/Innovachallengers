@@ -1,0 +1,74 @@
+:root{
+  --bg: #ffe6a7;
+  --card: #ffffff;
+  --accent: #ffb703;
+  --accent-dark: #e5a602;
+  --secondary: #8ecae6;
+  --danger: #e63946;
+}
+
+*{box-sizing:border-box}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.container{
+  width:320px;
+  background:var(--card);
+  border-radius:16px;
+  box-shadow:0 8px 30px rgba(0,0,0,0.12);
+  padding:24px;
+  text-align:center;
+}
+
+#logo{
+  width:80px;
+  height:80px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:8px;
+}
+
+h1{margin:6px 0 14px}
+.saldo-title{margin:0;color:#666}
+#saldo{
+  margin:8px 0 18px;
+  font-size:22px;
+  color:#1b5e20;
+}
+.danger {
+    background: #e63946;
+}
+
+.danger:hover {
+    background: #c62836;
+}
+
+
+.btn{
+  display:block;
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:none;
+  margin-bottom:12px;
+  font-size:16px;
+  cursor:pointer;
+  background:var(--accent);
+  transition:transform .08s ease,opacity .08s ease;
+}
+.btn:active{transform:translateY(1px)}
+.btn:hover{background:var(--accent-dark)}
+
+.secondary{background:var(--secondary)}
+.secondary:hover{background:#7fbadf}
+
+.danger{background:var(--danger); color:#fff}
+.danger:hover{background:#c62836}
