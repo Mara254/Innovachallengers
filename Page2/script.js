@@ -76,5 +76,5 @@ function carregarHistorico() {
 }
 
 function voltar() {
-    window.location.href = "../Page1/index.html";
+    window.location.href = "index.html";
 }
